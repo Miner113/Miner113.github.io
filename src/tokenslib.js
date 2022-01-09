@@ -36451,7 +36451,7 @@ var NspvPeerGroup = require('../net/nspvPeerGroup');
 require('../net/nspvPeer');  // init peer.js too
 
 const networks = require('../src/networks');
-const mynetwork = networks.grms;
+const mynetwork = networks.tokensv2;
 
 // you will need to do a call like:
 // p2cryptoconditions.cryptoconditions = await ccimp;
@@ -38559,8 +38559,8 @@ module.exports = {
     coin: coins.ZEC,
     komodoAssetNet: true
   },
-  grms: {
-    messagePrefix: '\x18GRMS asset chain:\n',
+  tokensv2: {
+    messagePrefix: '\x18TOKENSV2 asset chain:\n',
     bech32: 'R',
     bip32: {
       public:   0x9937e878,
